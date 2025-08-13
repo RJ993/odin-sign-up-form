@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+img {
+    width: 12.8em;
+}
+
+h1 {
+    font-size: 12.8rem;
+    font-family: norse-bold, sans-serif;
+    color: white;
+    font-weight: 300;
+}
+
+form {
+    background: rgb(241, 233, 233);
+    padding-top: 40em;
+    padding-bottom: 20em;
+}
+
+fieldset {
+    padding: 1.6em;
+    padding-left: 4em;
+    border: none;
+}
+
+h2, h3 {
+    font-size: 4rem;
+    margin-bottom: 1em;
+}
+
+h3 {
+    color: rgb(51, 50, 50);
+    margin-bottom: 0.5em
+}
+
+input {
+    padding: 0.5em;
+    border-color: #E5E7EB;
+    border-style: solid;
+    border-radius: 0.5em;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    width: 45%
+}
+
+button {
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    color: white;
+    background: #596D48;
+    width: 20%;
+    min-width: 93.7px;
+    margin-bottom: 3em;
+}
+
+span {
+    color: #596D48;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 4px 3px rgba(0, 0, 0, 0.167);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    background: center url(images/sign-background.jpg);
+    background-size: cover;
+    width: max(289.9px, 30%);
+}
+
+.odin {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.57);
+    padding: 0.8em;
+    margin-top: 6.4em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 45em;
+}
+
+.right {
+    width: max(849px, 70%);
+}
+
+.info {
+    background: white;
+    margin-bottom: 3em;
+
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 160%
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.sign_in {
+    font-size: 2rem;
+}
+
+.container.input{
+    flex-wrap: wrap;
+}
+
+#pwd:invalid, #cpwd:invalid {
+    outline: none;
+    border-color: crimson;
+}
+
+#pwd:valid, #cpwd:valid {
+    outline: none;
+    border-color: darkgreen;
+}
